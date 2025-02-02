@@ -1,0 +1,221 @@
+/* General Styles */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Teko", sans-serif;
+    margin: 0;
+    line-height: 1.6;
+}
+
+h1, h2, h3 {
+    font-family: "Josefin Sans", sans serif;
+    color: #2E8B57;
+}
+
+p {
+    color: #333;
+}
+
+/* Header and Navigation */
+header {
+    background: #2E8B57;
+    color: #fff;
+    padding: 1em;
+}
+
+header h1 {
+    text-align: center;
+    margin: 0;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0 1em;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+    color: black;
+}
+
+/* Main Content */
+main {
+    padding: 1em;
+}
+
+section {
+    margin-bottom: 2em;
+}
+
+.button {
+    display: inline-block;
+    background: #2E8B57;
+    color: #fff;
+    padding: 0.5em 1em;
+    text-decoration: none;
+    margin-top: 1em;
+}
+
+.button:hover {
+    background: #000000;
+}
+
+/* Footer */
+footer {
+    background: #5b5858;
+    text-align: center;
+    padding: 1em 0;
+}
+
+footer p {
+    color: #fff;
+}
+
+footer a {
+    color: #2E8B57;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: rgb(254, 254, 254);
+    text-decoration: underline;
+}
+
+/* Events Page */
+.event {
+    border-bottom: 1px solid #ccc;
+    padding: 1em 0;
+}
+
+.event:last-child {
+    border-bottom: none;
+}
+
+/* Blog Page */
+.blog-post {
+    border-bottom: 1px solid #ccc;
+    padding: 1em 0;
+}
+
+.blog-post:last-child {
+    border-bottom: none;
+}
+
+/* Gallery Page */
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.gallery figure {
+    margin: 1em;
+    max-width: 300px;
+}
+
+.gallery img {
+    width: 100%;
+    height: auto;
+}
+
+.gallery figcaption {
+    text-align: center;
+    margin-top: 0.5em;
+}
+
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+/* Slider Styles */
+.slider {
+    position: relative;
+    max-width: 800px;
+    margin: auto;
+}
+
+.slides {
+    position: relative;
+    overflow: hidden;
+}
+
+.slide {
+    display: none;
+}
+
+.slide img {
+    width: 100%;
+    display: block;
+}
+
+.caption {
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: #fff;
+    padding: 0.5em;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: #2E8B57;
+    font-weight: bold;
+    font-size: 18px;
+    border: none;
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+.prev:hover, .next:hover {
+    background-color: rgba(255, 255, 255, 1);
+}
+
+.prev {
+    left: 0;
+}
+
+.next {
+    right: 0;
+}
+
+/* Filter Buttons */
+.filters {
+    text-align: center;
+    margin-bottom: 1em;
+}
+
+.filter-button {
+    background-color: #2E8B57;
+    color: #fff;
+    border: none;
+    padding: 0.5em 1em;
+    margin: 0 0.5em;
+    cursor: pointer;
+}
+
+.filter-button:hover {
+    background-color: #3CB371;
+}

@@ -1,0 +1,225 @@
+header h1 {
+    background-color: darkblue;
+    color: aliceblue;
+    font-family: "Josefin Sans", sans-serif;
+    padding: 20px;
+    margin: 0;
+    text-align: center;
+    font-size: 1em;
+}
+
+header span {
+    color: yellow;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 1em;
+    display: flex;
+    justify-content: space-around;
+    background-color: black;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: small;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    text-decoration: none;
+    display: block;
+    color: aliceblue
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+    color: tomato;
+}
+
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    gap: 20px;
+}
+
+.card ul {
+    padding: 1em;
+    margin: 1em;
+}
+
+figcaption {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: small;
+    text-align: center;
+}
+figure img {
+    width: 200px;
+    height: auto;
+}
+
+.card {
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.profile {
+    display: flex;
+    align-items: center;
+    font-family: "Josefin Sans", sans-serif;
+    font-weight: 600;
+    color: black;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 8px;
+}
+
+.profile img {
+    width: 200px;
+    height: auto;
+    margin-left: 20px;
+    border-radius: 10%;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.9);
+}
+
+.profile-text {
+    max-width: 600px;
+    text-align: right;
+}
+
+.card h2 {
+    font-family: "Josefin Sans", sans-serif;
+    background-color: darkblue;
+    color: aliceblue;
+    text-align: center;
+    margin: 0;
+    padding: 10px;
+    border-radius: 8px 8px 0 0;
+}
+
+.card {
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.card h3 {
+    font-family: "Josefin Sans", sans-serif;
+    color: black;
+    text-align: center;
+    margin: 0 auto;
+    padding: 5px;
+    position: relative;
+    display: inline-block;
+}
+
+.card h3::after {
+    content: "";
+    display: block; 
+    width: 100%;
+    max-width: 200%;
+    min-width: 200%;
+    border-bottom: 1px solid darkblue;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 0;
+}
+
+.card p {
+    font-family: "Roboto", sans-serif;
+    color: black;
+    font-weight: 500;
+    text-align: justify;
+    margin: 20px auto;
+    width: 80%;
+    padding: 10px;
+}
+
+.card figure {
+    margin: 20px;
+}
+
+.card figure img {
+    width: 200px;
+    height: auto;
+}
+
+.card figure figcaption {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: small;
+    text-align: center;
+}
+
+.card {
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.content-flex {
+    display: flex;
+    align-items: center;  
+    margin: 2rem;  
+}
+
+.content-flex p {
+    margin: 0;
+    flex: 1;
+}
+
+.content-flex figure {
+    margin: 0 20px 0 0;
+    flex-shrink: 0;
+}
+
+.resources {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    font-family: "Josefin Sans", sans-serif;
+    font-weight: 600;
+    color: black;
+    padding: 10px;
+    margin: 10px;
+}
+.resources ul {
+    display: flex;
+    flex-direction: column;
+}
+
+.resources li {
+    margin: 10px 0;
+}
+
+footer {
+    background-color:darkblue;
+    color: aliceblue;
+    text-align: center;
+    padding: 10px;
+}
+
+footer p {
+    font-family: "Josefin Sans", sans-serif;
+    margin: 0;
+}
+
+#lastModified {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: small;
+    color: yellow;
+}
