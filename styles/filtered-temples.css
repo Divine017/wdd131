@@ -37,7 +37,7 @@ nav ul {
 nav ul li a {
     text-decoration: none;
     color: white;
-    padding: 5px 10px; 
+    padding: 5px 10px;
 }
 
 nav ul li a:hover {
@@ -93,16 +93,19 @@ main h2 {
     transform: rotate(-50deg) translate(10px, -10px);
 }
 
-figure img {
-    width: 100%;
-    height: auto;
+.temple-card {
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
 }
 
-figcaption {
-    font-family: "Josefin Sans", sans-serif;
-    font-size: 1rem;
-    text-align: center;
-    margin-top: 10px;
+.temple-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
 }
 
 footer {
