@@ -5,7 +5,7 @@ const temples = [
         location: "Aba, Nigeria",
         dedicated: "2005, August, 7",
         area: 11500,
-        imageUrl: "images/"
+        imageUrl: "images/aba-nigeria-temple.jpg"
     },
     {
         templeName: "Manti Utah",
@@ -47,14 +47,14 @@ const temples = [
         location: "Mexico City, Mexico",
         dedicated: "1983, December, 2",
         area: 116642,
-        imageUrl: "images/mexico-city-temple-exterior-1518361-wallpaper.jpg"
+        imageUrl: "images/albuquerque-temple.jpg"
     },
     {
         templeName: "Accra Ghana",
         location: "Accra, Ghana",
         dedicated: "2004, January, 11",
         area: 17200,
-        imageUrl: "images/accra-ghana-temple-lds-273999-wallpaper.jpg"
+        imageUrl: "images/accra-ghana-temple.jpg"
     },
     {
         templeName: "Johannesburg South Africa",

@@ -93,7 +93,7 @@ main h2 {
     transform: rotate(-50deg) translate(10px, -10px);
 }
 
-.temple-card {
+#temple-card {
     border: 1px solid #ccc;
     border-radius: 10px;
     padding: 10px;
@@ -102,7 +102,7 @@ main h2 {
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
 }
 
-.temple-card img {
+#temple-card img {
     width: 100%;
     height: auto;
     border-radius: 10px;
