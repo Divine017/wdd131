@@ -12,35 +12,35 @@ const temples = [
         location: "Manti, Utah, United States",
         dedicated: "1888, May, 21",
         area: 74792,
-        imageUrl: "images/manti-temple-768192-wallpaper.jpg"
+        imageUrl: "images/australia-temple.jpg"
     },
     {
         templeName: "Payson Utah",
         location: "Payson, Utah, United States",
         dedicated: "2015, June, 7",
         area: 96630,
-        imageUrl: "images/payson-utah-temple-exterior-1416671-wallpaper.jpg"
+        imageUrl: "images/ber-switerland-temple.jpg"
     },
     {
         templeName: "Yigo Guam",
         location: "Yigo, Guam",
         dedicated: "2020, May, 2",
         area: 6861,
-        imageUrl: "images/yigo_guam_temple_2.jpg"
+        imageUrl: "images/bountiful-temple.jpg"
     },
     {
         templeName: "Washington D.C.",
         location: "Kensington, Maryland, United States",
         dedicated: "1974, November, 19",
         area: 156558,
-        imageUrl: "images/washington_dc_temple-exterior-2.jpeg"
+        imageUrl: "images/cardston-canada-temple.jpeg"
     },
     {
         templeName: "Lima Perú",
         location: "Lima, Perú",
         dedicated: "1986, January, 10",
         area: 9600,
-        imageUrl: "images/lima-peru-temple-evening-1075606-wallpaper.jpg"
+        imageUrl: "images/cuidad-juarez-mexico-temple.jpg"
     },
     {
         templeName: "Mexico City Mexico",
