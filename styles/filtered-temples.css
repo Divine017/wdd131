@@ -91,14 +91,18 @@ main h2 {
 }
 
 footer {
+    font-family: "Teko", sans-serif;
     background-color: blueviolet;
     color: white;
     text-align: center;
     padding: 10px 0;
+    font-size: 1.1rem;
 }
 
 #lastModified {
+    font-family: "Josefin Sans", sans-serif;
     color: #ffcc00;
+    font-size: 0.8rem;
 }
 
 .hamburger {
