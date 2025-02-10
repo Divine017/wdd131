@@ -19,10 +19,12 @@ header {
 }
 
 header h1 {
+    font-family: "Josefin Sans", sans-serif;
     margin-left: 1rem;
 }
 
 nav {
+    font-family: "Josefin Sans", sans-serif;
     margin-left: auto;
 }
 
@@ -39,7 +41,7 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    color: yellow;
+    color: rgb(0, 0, 0);
     text-decoration: underline;
 }
 
@@ -50,6 +52,10 @@ main {
     background-color: wheat;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+main h2 {
+    margin-bottom: 20px;
 }
 
 .gallery {
@@ -99,7 +105,7 @@ footer {
 }
 
 .hamburger.active .line:nth-child(1) {
-    transform: rotate(45deg) translate(7px, 7px);
+    transform: rotate(50deg) translate(10px, 10px);
 }
 
 .hamburger.active .line:nth-child(2) {
@@ -107,6 +113,6 @@ footer {
 }
 
 .hamburger.active .line:nth-child(3) {
-    transform: rotate(-45deg) translate(7px, -7px);
+    transform: rotate(-50deg) translate(10px, -10px);
 }
 
