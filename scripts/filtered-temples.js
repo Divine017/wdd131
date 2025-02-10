@@ -36,11 +36,11 @@ const temples = [
         imageUrl: "images/ciudad-juarez-mexico-temple.jpg"
     },
     {
-        templeName: "Lima Perú",
-        location: "Lima, Perú",
-        dedicated: "1986-01-10",
-        area: 9600,
-        imageUrl: "images/"
+        templeName: "Salt Lake",
+        location: "Salt Lake City, Utah, United States",
+        dedicated: "1893-04-06",
+        area: 253000,
+        imageUrl: "images/salt-lake-temple.webp"
     },
     {
         templeName: "Albuquerque New Mexico",
@@ -57,18 +57,18 @@ const temples = [
         imageUrl: "images/accra-ghana-temple.jpg"
     },
     {
-        templeName: "Johannesburg South Africa",
-        location: "Johannesburg, South Africa",
-        dedicated: "1985-08-24",
-        area: 19500,
-        imageUrl: "images/johannesburg-south-africa-temple-exterior-1075606-wallpaper.jpg"
+        templeName: "Free Town Sierra Leone",
+        location: "Freetown, Sierra Leone",
+        dedicated: "1989-04-22",
+        area: 18800,
+        imageUrl: "images/freetown-sierra-leone-temple.webp"
     },
     {
-        templeName: "Hong Kong China",
-        location: "Hong Kong, China",
-        dedicated: "1996-05-26",
-        area: 21700,
-        imageUrl: "images/hong-kong-china-temple-exterior-273999-wallpaper.jpg"
+        templeName: "Chicago Illinois",
+        location: "Glenview, Illinois, United States",
+        dedicated: "1985-08-09",
+        area: 47000,
+        imageUrl: "images/chicago-illinois-temple.webp"
     }
 ];
 
