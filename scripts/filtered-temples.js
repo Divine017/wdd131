@@ -82,9 +82,9 @@ function displayTemples(templesToDisplay) {
 
         templeCard.innerHTML = `
             <h2>${temple.templeName}</h2>
-            <p>Location: ${temple.location}</p>
-            <p>Dedicated: ${temple.dedicated}</p>
-            <p>Area: ${temple.area} sq ft</p>
+            <p><span class="label">Location:</span> <span class="value">${temple.location}</span></p>
+            <p><span class="label">Dedicated:</span> <span class="value">${temple.dedicated}</span></p>
+            <p><span class="label">Area:</span> <span class="value">${temple.area} sq ft</span></p>
             <img src="${temple.imageUrl}" alt="${temple.templeName}" loading="lazy">
         `;
 

@@ -90,6 +90,15 @@ main h2 {
     padding: 5px;
 }
 
+.temple-card p span.label {
+    color: #030fff;
+    font-weight: bold;
+}
+
+.temple-card p span.value {
+    color: #282727;
+}
+
 footer {
     font-family: "Teko", sans-serif;
     background-color: blueviolet;
