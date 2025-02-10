@@ -49,13 +49,14 @@ main {
     max-width: 1200px;
     margin: 0 auto;
     padding: 20px;
-    background-color: wheat;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 main h2 {
+    font-family: "Port Lligat Sans", sans-serif;
     margin-bottom: 20px;
+    text-align: center;
 }
 
 .gallery {
@@ -65,10 +66,11 @@ main h2 {
 }
 
 .temple-card {
-    border: 1px solid #ccc;
-    border-radius: 10px;
+    border: 2px solid #efe9e9;
+    border-radius: 20px;
     padding: 10px;
     text-align: center;
+    background-color: wheat;
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
 }
 
@@ -77,6 +79,15 @@ main h2 {
     height: auto;
     border-radius: 10px;
     display: block;
+}
+
+#temple-cards h2 {
+    font-family: "Josefin Sans", sans-serif;
+}
+
+#temple-cards p {
+    font-family: "port lligat sans", sans-serif;
+    padding: 5px;
 }
 
 footer {
