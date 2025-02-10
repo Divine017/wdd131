@@ -3,70 +3,70 @@ const temples = [
     {
         templeName: "Aba Nigeria",
         location: "Aba, Nigeria",
-        dedicated: "2005, August, 7",
+        dedicated: "2005-08-07",
         area: 11500,
         imageUrl: "images/aba-nigeria-temple.jpg"
     },
     {
         templeName: "Manti Utah",
         location: "Manti, Utah, United States",
-        dedicated: "1888, May, 21",
+        dedicated: "1888-05-21",
         area: 74792,
         imageUrl: "images/australia-temple.jpg"
     },
     {
         templeName: "Payson Utah",
         location: "Payson, Utah, United States",
-        dedicated: "2015, June, 7",
+        dedicated: "2015-06-07",
         area: 96630,
         imageUrl: "images/ber-switerland-temple.jpg"
     },
     {
         templeName: "Yigo Guam",
         location: "Yigo, Guam",
-        dedicated: "2020, May, 2",
+        dedicated: "2020-05-02",
         area: 6861,
         imageUrl: "images/bountiful-temple.jpg"
     },
     {
         templeName: "Washington D.C.",
         location: "Kensington, Maryland, United States",
-        dedicated: "1974, November, 19",
+        dedicated: "1974-11-19",
         area: 156558,
         imageUrl: "images/cardston-canada-temple.jpeg"
     },
     {
         templeName: "Lima Perú",
         location: "Lima, Perú",
-        dedicated: "1986, January, 10",
+        dedicated: "1986-01-10",
         area: 9600,
         imageUrl: "images/cuidad-juarez-mexico-temple.jpg"
     },
     {
         templeName: "Mexico City Mexico",
         location: "Mexico City, Mexico",
-        dedicated: "1983, December, 2",
+        dedicated: "1983-12-02",
         area: 116642,
         imageUrl: "images/albuquerque-temple.jpg"
     },
     {
         templeName: "Accra Ghana",
         location: "Accra, Ghana",
-        dedicated: "2004, January, 11",
+        dedicated: "2004-01-11",
         area: 17200,
         imageUrl: "images/accra-ghana-temple.jpg"
     },
     {
         templeName: "Johannesburg South Africa",
         location: "Johannesburg, South Africa",
-        dedicated: "1985, August, 24",
+        dedicated: "1985-08-24",
         area: 19500,
         imageUrl: "images/johannesburg-south-africa-temple-exterior-1075606-wallpaper.jpg"
     },
     {
         templeName: "Hong Kong China",
         location: "Hong Kong, China",
-        dedicated: "1996, May, 26",
+        dedicated: "1996-05-26",
         area: 21700,
         imageUrl: "images/hong-kong-china-temple-exterior-273999-wallpaper.jpg"
     }

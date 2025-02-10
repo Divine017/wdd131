@@ -4,25 +4,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Omotayo Ayobami Oyedele">
-    <meta name="description" content="Explore the majestic beauty and spiritual serenity of ancient and modern temples from around the world. This album showcases a collection of stunning images that capture the architectural grandeur, intricate details, and serene ambiance of these sacred spaces. Each photograph is accompanied by a brief caption, highlighting the unique history and cultural significance of the temple. Immerse yourself in the timeless allure of these holy sites and let their tranquility inspire and uplift your spirit.">
-    <link rel="stylesheet" href="styles/temples-large.css">
-    <link rel="stylesheet" href="styles/temples.css">
+    <meta name="description" content="Explore the beauty of temples worldwide. View images and details of various temples, categorized by age, size, and location.">
+    <link rel="stylesheet" href="styles/filtered-temples.css">
     <title>Temple Album | Omotayo Ayobami Oyedele</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap" rel="stylesheet">
-    <script src="scripts/temples.js" defer></script>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <script src="scripts/filtered-temples.js" defer></script>
 </head>
 <body>
     <header>
         <h1>Temple Album</h1>
-        <div class="hamburger" onclick="toogleMenu()">
+        <div class="hamburger" onclick="toggleMenu()">
             <div class="line"></div>
             <div class="line"></div>
             <div class="line"></div>
         </div>
-        <nav>
-            <ul id="nav-menu">
+        <nav id="nav-menu">
+            <ul>
                 <li><a href="#" data-filter="home">Home</a></li>
                 <li><a href="#" data-filter="old">Old</a></li>
                 <li><a href="#" data-filter="new">New</a></li>
@@ -32,12 +29,13 @@
         </nav>
     </header>
     <main>
-      <h2>Home</h2>
-      <div id="temple-cards"></div>
+        <h2>Temple Gallery</h2>
+        <div class="gallery" id="temple-cards">
+            <!-- JavaScript will populate this dynamically -->
+        </div>
     </main>
-      
-      <footer>
-        <p class="main">&copy; <span id="currentyear"></span> 💻 Omotayo Ayobami Oyedele 💻 Nigeria</p>
+    <footer>
+        <p>&copy; <span id="currentyear"></span> 💻 Omotayo Ayobami Oyedele 💻 Nigeria</p>
         <p id="lastModified"></p>
     </footer>
 </body>
