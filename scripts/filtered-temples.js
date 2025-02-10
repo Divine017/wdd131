@@ -40,7 +40,7 @@ const temples = [
         location: "Lima, Perú",
         dedicated: "1986-01-10",
         area: 9600,
-        imageUrl: "images/ber-switerland-temple.jpg"
+        imageUrl: "images/"
     },
     {
         templeName: "Albuquerque New Mexico",
