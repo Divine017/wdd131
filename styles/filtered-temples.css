@@ -66,7 +66,7 @@ main h2 {
 }
 
 .temple-card {
-    border: 2px solid #efe9e9;
+    border: 2px solid #959393;
     border-radius: 20px;
     padding: 10px;
     text-align: center;
@@ -101,7 +101,6 @@ footer {
     color: #ffcc00;
 }
 
-/* Responsive Menu */
 .hamburger {
     display: none;
     flex-direction: column;

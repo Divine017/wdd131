@@ -8,45 +8,45 @@ const temples = [
         imageUrl: "images/aba-nigeria-temple.jpg"
     },
     {
-        templeName: "Manti Utah",
-        location: "Manti, Utah, United States",
-        dedicated: "1888-05-21",
-        area: 74792,
+        templeName: "Australia",
+        location: "Sydney, Australia",
+        dedicated: "1984-09-20",
+        area: 10700,
         imageUrl: "images/australia-temple.jpg"
     },
     {
-        templeName: "Payson Utah",
-        location: "Payson, Utah, United States",
-        dedicated: "2015-06-07",
-        area: 96630,
-        imageUrl: "images/ber-switerland-temple.jpg"
-    },
-    {
-        templeName: "Yigo Guam",
-        location: "Yigo, Guam",
-        dedicated: "2020-05-02",
-        area: 6861,
+        templeName: "Bountiful Utah",
+        location: "Bountiful, Utah, United States",
+        dedicated: "1995-01-08",
+        area: 104000,
         imageUrl: "images/bountiful-temple.jpg"
     },
     {
-        templeName: "Washington D.C.",
-        location: "Kensington, Maryland, United States",
-        dedicated: "1974-11-19",
-        area: 156558,
-        imageUrl: "images/cardston-canada-temple.jpeg"
+        templeName: "Cardston Canada",
+        location: "Cardston, Alberta, Canada",
+        dedicated: "1923-08-26",
+        area: 88000,
+        imageUrl: "images/cardston-canada-temple.jpg"
+    },
+    {
+        templeName: "Ciudad Juárez México",
+        location: "Ciudad Juárez, Chihuahua, México",
+        dedicated: "2002-02-26",
+        area: 116642,
+        imageUrl: "images/ciudad-juarez-mexico-temple.jpg"
     },
     {
         templeName: "Lima Perú",
         location: "Lima, Perú",
         dedicated: "1986-01-10",
         area: 9600,
-        imageUrl: "images/cuidad-juarez-mexico-temple.jpg"
+        imageUrl: "images/ber-switerland-temple.jpg"
     },
     {
-        templeName: "Mexico City Mexico",
-        location: "Mexico City, Mexico",
-        dedicated: "1983-12-02",
-        area: 116642,
+        templeName: "Albuquerque New Mexico",
+        location: "Albuquerque, New Mexico, United States",
+        dedicated: "2000-03-05",
+        area: 34200,
         imageUrl: "images/albuquerque-temple.jpg"
     },
     {
