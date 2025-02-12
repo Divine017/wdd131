@@ -1,11 +1,13 @@
 body {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Port Lligat Sans', sans-serif;
     margin: 0;
     padding: 20px;
     background-color: #F5F5DC;
     color: #333;
 }
+
 header {
+    font-family: "Josefin Sans", sans-serif;
     background-color: #2E8B57;
     color: white;
     text-align: center;
@@ -13,6 +15,7 @@ header {
     font-size: 1.5em;
     font-weight: bold;
 }
+
 section {
     background-color: white;
     margin: 20px auto;
@@ -21,26 +24,42 @@ section {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     max-width: 800px;
 }
+
 h2 {
+    font-family: "Teko", sans-serif;
     color: #2E8B57;
     border-bottom: 2px solid #2E8B57;
     padding-bottom: 5px;
 }
+
 ul {
     list-style-type: square;
 }
+
 .wireframe {
     text-align: center;
 }
+
 .wireframe img {
     max-width: 100%;
     border: 1px solid #ccc;
     border-radius: 5px;
 }
+
 footer {
     text-align: center;
-    padding: 10px;
+    padding: 5px;
     background-color: #2E8B57;
     color: white;
     margin-top: 20px;
+}
+
+span {
+    color: #f8e402;
+    font-weight: bold;
+}
+
+#lastModified {
+    font-size: 0.8em;
+    color: #ffea00;
 }
