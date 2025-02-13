@@ -37,24 +37,19 @@
         <input type="date" id="install-date" name="install_date" required>
 
         <fieldset>
-            <legend>Useful Features (Check all that apply):</legend>
-            <input type="checkbox" id="feature1" name="features" value="Battery Life">
-            <label for="feature1">Battery Life</label>
-
-            <input type="checkbox" id="feature2" name="features" value="Performance">
-            <label for="feature2">Performance</label>
-
-            <input type="checkbox" id="feature3" name="features" value="Design">
-            <label for="feature3">Design</label>
-
-            <input type="checkbox" id="feature4" name="features" value="Ease of Use">
-            <label for="feature4">Ease of Use</label>
+            <legend>Which features did you find useful in this product?<br>(Check all that apply):</legend>
+            <div class="checkbox-group">
+                <label for="feature1"><input type="checkbox" id="feature1" name="features" value="Battery Life"> Battery Life</label>
+                <label for="feature2"><input type="checkbox" id="feature2" name="features" value="Performance"> Performance</label>
+                <label for="feature3"><input type="checkbox" id="feature3" name="features" value="Design"> Design</label>
+                <label for="feature4"><input type="checkbox" id="feature4" name="features" value="Ease of Use"> Ease of Use</label>
+            </div>
         </fieldset>
 
-        <label for="review">Write a Review (Optional):</label>
+        <label for="review">Write a Review <span class="option">(Optional)</span>:</label>
         <textarea id="review" name="review" rows="4"></textarea>
 
-        <label for="username">Your Name (Optional):</label>
+        <label for="username">Your Name <span class="option">(Optional)</span>:</label>
         <input type="text" id="username" name="username">
 
         <input type="submit" value="Submit Review">
