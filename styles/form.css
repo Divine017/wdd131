@@ -14,7 +14,7 @@ form {
     border-radius: 5px;
     background: white;
     width: 50%;
-    box-shadow: 2px 2px 10px rgba(0,0,0,0.1);
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
 }
 
 label, input, select, textarea {
@@ -23,39 +23,40 @@ label, input, select, textarea {
     width: 100%;
 }
 
-input[type="radio"] {
-	display: none;
-	position: relative;
-	caret-color: rgba(0, 0, 0, 0);
+input[type="radio"] { 
+    display: none;
+    position: relative;
+    caret-color: rgba(0, 0, 0, 0);
 }
 
 .stars {
-	display: flex;
-	flex-direction: column-reverse;
-	justify-content: left;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: left;
 }
 
 .stars > label {
-	color: gold;
-	width: 30px;
-	height: 30px;
-	font-size: 2rem;
-	margin-left: 5px;
-	display: flex;
-	align-items: center;
-	caret-color: rgba(0, 0, 0, 0);
+    color: gold;
+    width: 30px;
+    height: 30px;
+    font-size: 2rem;
+    margin-left: 5px;
+    display: flex;
+    align-items: center;
+    caret-color: rgba(0, 0, 0, 0);
+    cursor: pointer;
 }
 
-.stars rating > label:hover {
-	color: #000;
+.stars > label:hover {
+    color: black;
 }
 
-.rating > label::before {
-	content: "\2606";
+.stars > label::before {
+    content: "\2606";
 }
 
-.rating input:checked ~ label::before {
-	content: "\2605";
+.stars input:checked ~ label::before {
+    content: "\2605";
 }
 
 fieldset {
@@ -74,6 +75,7 @@ input[type="submit"] {
 input[type="submit"]:hover {
     background-color: #218838;
 }
+
 
 /* 
 footer {
