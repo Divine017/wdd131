@@ -23,18 +23,39 @@ label, input, select, textarea {
     width: 100%;
 }
 
-.rating label {
-    font-size: 2rem;
-    color: gray;
-    cursor: pointer;
+input[type="radio"] {
+	display: none;
+	position: relative;
+	caret-color: rgba(0, 0, 0, 0);
 }
 
-.rating input {
-    display: none;
+.stars {
+	display: flex;
+	flex-direction: column-reverse;
+	justify-content: left;
 }
 
-.rating input:checked ~ label {
-    color: gold;
+.stars > label {
+	color: gold;
+	width: 30px;
+	height: 30px;
+	font-size: 2rem;
+	margin-left: 5px;
+	display: flex;
+	align-items: center;
+	caret-color: rgba(0, 0, 0, 0);
+}
+
+.stars rating > label:hover {
+	color: #000;
+}
+
+.rating > label::before {
+	content: "\2606";
+}
+
+.rating input:checked ~ label::before {
+	content: "\2605";
 }
 
 fieldset {
@@ -54,14 +75,14 @@ input[type="submit"]:hover {
     background-color: #218838;
 }
 
-
+/* 
 footer {
     margin-top: 20px;
-    padding: 10px;
+    padding: 5px;
     background-color: #333;
     color: white;
     position: fixed;
     bottom: 0;
     width: 100%;
     text-align: center;
-}
+} */
