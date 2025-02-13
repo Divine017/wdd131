@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Review Submitted</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <h1>Thank You for Your Review!</h1>
+    </header>
+
+    <p>Your review has been submitted successfully.</p>
+    <p>Total Reviews Submitted: <span id="review-count">0</span></p>
+
+    <a href="form.html">Submit another review</a>
+
+    <footer>
+        <p>&copy; 2025 Your Company. All rights reserved.</p>
+    </footer>
+
+    <script>
+        // Retrieve and increment review count from localStorage
+        let count = localStorage.getItem("reviewCount");
+        count = count ? parseInt(count) + 1 : 1;
+        localStorage.setItem("reviewCount", count);
+
+        // Display updated count
+        document.getElementById("review-count").textContent = count;
+    </script>
+</body>
+</html>
