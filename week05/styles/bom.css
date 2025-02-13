@@ -1,0 +1,10 @@
+/* Style for the delete button */
+.delete {
+    width: fit-content;
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 0.5em;
+    cursor: pointer;
+  }
+  
