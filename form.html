@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Omotayo Ayobami Oyedele">
+    <meta name="description" content="Submit your product reviews and ratings. Share your experience with different products, rate their features, and help others make informed decisions.">
+    <link rel="stylesheet" href="styles/form.css">
+    <title>Product Review Form | Omotayo Ayobami Oyedele</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Port+Lligat+Sans&family=Roboto:ital,wght@0,100..900;1,100..900&family=Teko:wght@300..700&display=swap" rel="stylesheet">
+    <script src="scripts/form-script.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Product Review</h1>
+    </header>
+
+    <form action="review.html" method="get">
+        <label for="product">Product Name:</label>
+        <select id="product" name="product" required>
+            <option value="" disabled selected>Select a Product ...</option>
+        </select>
+
+        <fieldset class="rating">
+            <legend>Overall Rating:</legend>
+            <input type="radio" id="star5" name="rating" value="5" required><label for="star5">&#9733;</label>
+            <input type="radio" id="star4" name="rating" value="4" required><label for="star4">&#9733;</label>
+            <input type="radio" id="star3" name="rating" value="3" required><label for="star3">&#9733;</label>
+            <input type="radio" id="star2" name="rating" value="2" required><label for="star2">&#9733;</label>
+            <input type="radio" id="star1" name="rating" value="1" required><label for="star1">&#9733;</label>
+        </fieldset>
+
+        <label for="install-date">Date of Installation:</label>
+        <input type="date" id="install-date" name="install_date" required>
+
+        <fieldset>
+            <legend>Useful Features (Check all that apply):</legend>
+            <input type="checkbox" id="feature1" name="features" value="Battery Life">
+            <label for="feature1">Battery Life</label>
+
+            <input type="checkbox" id="feature2" name="features" value="Performance">
+            <label for="feature2">Performance</label>
+
+            <input type="checkbox" id="feature3" name="features" value="Design">
+            <label for="feature3">Design</label>
+
+            <input type="checkbox" id="feature4" name="features" value="Ease of Use">
+            <label for="feature4">Ease of Use</label>
+        </fieldset>
+
+        <label for="review">Write a Review (Optional):</label>
+        <textarea id="review" name="review" rows="4"></textarea>
+
+        <label for="username">Your Name (Optional):</label>
+        <input type="text" id="username" name="username">
+
+        <input type="submit" value="Submit Review">
+    </form>
+
+    <footer>
+        <p class="main">&copy; <span id="currentyear"></span> 💻 Omotayo Ayobami Oyedele 💻 Nigeria</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>
