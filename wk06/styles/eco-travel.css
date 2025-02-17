@@ -36,36 +36,47 @@ header {
 #nav-menu ul {
   list-style: none;
   display: flex;
-  gap: 2rem;
+  gap: 1rem;
   margin: 0;
   padding: 0;
 }
 
 #nav-menu ul li a {
-  color: #fff;
+  color: var(--secondary-color);
   text-decoration: none;
   font-weight: 700;
 }
 
 #nav-menu ul li a:hover {
   text-decoration: underline;
+  color: var(--tertiary-color);
 }
 
-/* Hamburger (for mobile) */
 .hamburger {
-  display: none; /* Hidden on larger screens */
+  display: none;
   flex-direction: column;
   cursor: pointer;
+}
+
+.hamburger.active .bar:nth-child(1) {
+  transform: rotate(50deg) translate(7px, 9px);
+}
+
+.hamburger.active .bar:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger.active .bar:nth-child(3) {
+  transform: rotate(-50deg) translate(6px, -9px);
 }
 
 .bar {
   width: 25px;
   height: 3px;
-  background-color: #fff;
+  background-color: var(--secondary-color);
   margin: 4px 0;
 }
 
-/* Hero Section */
 .hero {
   max-width: 1200px;
   margin: 20px auto;
