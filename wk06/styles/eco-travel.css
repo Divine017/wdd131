@@ -1,4 +1,3 @@
-/* Global resets & typography */
 * {
     box-sizing: border-box;
     margin: 0;
@@ -16,6 +15,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    font-family: "Josefin Sans", sans-serif;
     background-color: #2E8B57;
     color: #fff;
     padding: 20px;
