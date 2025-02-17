@@ -58,6 +58,13 @@ header {
   cursor: pointer;
 }
 
+.bar {
+  width: 25px;
+  height: 3px;
+  background-color: var(--secondary-color);
+  margin: 4px 0;
+}
+
 .hamburger.active .bar:nth-child(1) {
   transform: rotate(50deg) translate(7px, 9px);
 }
@@ -68,13 +75,6 @@ header {
 
 .hamburger.active .bar:nth-child(3) {
   transform: rotate(-50deg) translate(6px, -9px);
-}
-
-.bar {
-  width: 25px;
-  height: 3px;
-  background-color: var(--secondary-color);
-  margin: 4px 0;
 }
 
 .hero {
@@ -95,7 +95,8 @@ header {
 }
 
 .hero h2 {
-  color: #2E8B57;
+  color: var(--primary-color);
+  font-family: "Josefin Sans", sans-serif;
   font-size: 1.75rem;
   margin-bottom: 10px;
 }
@@ -104,17 +105,17 @@ header {
   line-height: 1.6;
 }
 
-/* Featured Articles */
 .featured-articles {
   max-width: 1200px;
   margin: 20px auto;
-  background-color: #fff;
+  background-color: var(--secondary-color);
   border-radius: 8px;
   box-shadow: 0 2px 5px rgba(0,0,0,0.1);
   padding: 20px;
 }
 
 .featured-articles h2 {
+  font-family: "Josefin Sans", sans-serif;
   color: #2E8B57;
   border-bottom: 2px solid #2E8B57;
   padding-bottom: 5px;
@@ -129,8 +130,8 @@ header {
 }
 
 .article {
-  background-color: #fff;
-  border: 1px solid #ccc;
+  background-color: var(--secondary-color);
+  border: 1px solid var(--background-color);
   border-radius: 6px;
   text-align: center;
   padding: 15px;
@@ -145,33 +146,33 @@ header {
 }
 
 .article h3 {
-  color: #2E8B57;
+  font-family: "Josefin Sans", sans-serif;
+  color: var(--primary-color);
   margin-bottom: 10px;
 }
 
 .article p {
-  font-size: 0.9rem;
+  font-size: 1rem;
   line-height: 1.4;
-  color: #555;
+  font-family: "Port Lligat Sans", sans-serif;
+  color: var(--tertiary-color);
 }
 
-/* Footer */
 footer {
-  background-color: #2E8B57;
-  color: #fff;
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  font-family: "Port Lligat Sans", sans-serif;
   text-align: center;
   padding: 15px;
   margin-top: 30px;
 }
 
-footer a {
-  color: #fff;
+footer i:hover {
+  color: var(--tertiary-color);
   text-decoration: underline;
 }
 
-/* Responsive Styles */
 @media (max-width: 768px) {
-  /* Show hamburger, hide nav menu by default */
   .hamburger {
     display: flex;
   }
@@ -180,7 +181,7 @@ footer a {
     flex-direction: column;
     gap: 1rem;
   }
-  /* Toggle nav menu when .active is applied via JS */
+
   #nav-menu ul.active {
     display: flex;
   }
