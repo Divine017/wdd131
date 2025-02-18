@@ -4,7 +4,7 @@ const navList = document.querySelector('#nav-menu ul');
 
 // Listen for a click on the hamburger icon
 hamburger.addEventListener('click', () => {
-  // Toggle the "active" class on both the hamburger and the nav list
-  hamburger.classList.toggle('active');
+  const isActive = hamburger.classList.toggle('active');
   navList.classList.toggle('active');
+  document.getElementById('nav-menu').setAttribute('aria-expanded', isActive);
 });
