@@ -179,17 +179,21 @@ footer {
   margin-top: 30px;
 }
 
-footer i:hover {
-  color: var(--hover-color);
-  text-decoration: underline;
-}
-
 .social-media {
   display: flex;
   justify-content: center;
   gap: 10px;
   flex-wrap: wrap;
   margin: 5px;
+}
+
+.social-media a i {
+  color: var(--secondary-color);
+  transition: all 0.3s ease-in-out;
+}
+
+.social-media a i:hover {
+  color: var(--hover-color);
 }
 
 @media (max-width: 768px) {
