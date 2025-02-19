@@ -89,6 +89,77 @@
     </div>
   </section>
 
+  <section class="featured-trips">
+    <h2>Sustainable Travel Deals</h2>
+    <div class="trip-grid">
+      <article class="trip">
+        <img src="images/bali-eco.webp" alt="Bali Eco Retreat">
+        <h3>Bali Eco Retreat</h3>
+        <p>Stay in a solar-powered villa and explore organic farms.</p>
+        <a href="booking.html" class="btn">Book Now</a>
+      </article>
+      <article class="trip">
+        <img src="images/costa-rica-eco.webp" alt="Costa Rica Eco Adventure">
+        <h3>Costa Rica Eco Adventure</h3>
+        <p>Experience the rich biodiversity and eco-friendly lodges.</p>
+        <a href="booking.html" class="btn">Book Now</a>
+      </article>
+      <article class="trip">
+        <img src="images/iceland-eco.webp" alt="Iceland Green Tour">
+        <h3>Iceland Green Tour</h3>
+        <p>Explore geothermal energy sites and sustainable practices.</p>
+        <a href="booking.html" class="btn">Book Now</a>
+      </article>
+      <article class="trip">
+        <img src="images/new-zealand-eco.webp" alt="New Zealand Eco Trek">
+        <h3>New Zealand Eco Trek</h3>
+        <p>Hike through pristine landscapes and stay in eco-lodges.</p>
+        <a href="booking.html" class="btn">Book Now</a>
+      </article>
+    </div>
+  </section> 
+
+  <section class="carbon-calculator">
+    <h2>Calculate Your Travel Footprint</h2>
+    <label for="distance">Enter flight distance (km):</label>
+    <input type="number" id="distance" placeholder="e.g., 1500">
+    <button onclick="calculateFootprint()">Calculate</button>
+    <p id="result"></p>
+  </section>
+  
+  <section class="testimonials">
+    <h2>What Our Travelers Say</h2>
+    <div class="carousel">
+        <div class="carousel-inner">
+            <div class="testimonial">
+                <p>"My eco-tour in Costa Rica was life-changing!" – <strong>Maria G.</strong></p>
+            </div>
+            <div class="testimonial">
+                <p>"Loved the zero-waste policy in my Bali retreat!" – <strong>James P.</strong></p>
+            </div>
+        </div>
+        <button class="prev testimonial-btn-left" onclick="moveSlide(-1, 'testimonial')">&#10094;</button>
+        <button class="next testimonial-btn-right" onclick="moveSlide(1, 'testimonial')">&#10095;</button>
+    </div>
+</section>
+
+  <section class="blog">
+    <h2>Latest Eco-Travel Blogs</h2>
+    <article>
+      <h3><a href="blog1.html">10 Tips for Sustainable Travel</a></h3>
+      <p>Simple ways to reduce your carbon footprint while exploring...</p>
+    </article>
+  </section>  
+
+  <section class="newsletter">
+    <h2>Stay Updated with Eco-Travel Tips</h2>
+    <p>Get exclusive sustainable travel guides and deals.</p>
+    <form>
+      <input type="email" placeholder="Enter your email">
+      <button type="submit">Subscribe</button>
+    </form>
+  </section>  
+
   <!-- Footer -->
   <footer>
     <p>&copy; 2025 Eco-Travel Guides</p>
