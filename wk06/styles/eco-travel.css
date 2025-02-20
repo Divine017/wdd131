@@ -182,7 +182,7 @@ header {
 
 .featured-trips h2 {
   font-family: "Josefin Sans", sans-serif;
-  color: var (--primary-color);
+  color: var (var(--primary-color));
   border-bottom: 2px solid var(--primary-color);
   padding-bottom: 5px;
   margin-bottom: 20px;
