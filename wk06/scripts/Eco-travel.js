@@ -56,3 +56,10 @@ document.addEventListener("DOMContentLoaded", function () {
   // Auto-slide every 5 seconds for trips
   setInterval(() => moveSlide(1), 5000);
 });
+
+// Basic functionality for the Live Chat button
+document.querySelector('.live-chat-link').addEventListener('click', function(e) {
+  e.preventDefault();
+  alert("Live Chat is currently unavailable. Please call our hotline at 1-800-555-1234 for immediate assistance.");
+});
+
