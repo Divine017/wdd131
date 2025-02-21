@@ -91,8 +91,8 @@ header {
 
 .featured-articles h2 {
   font-family: "Josefin Sans", sans-serif;
-  color: #2E8B57;
-  border-bottom: 2px solid #2E8B57;
+  color: var(--primary-color);
+  border-bottom: 2px solid var(--primary-color);
   padding-bottom: 5px;
   margin-bottom: 20px;
   font-size: 1.5rem;
@@ -208,7 +208,7 @@ header {
 }
 
 .trip {
-  background: white;
+  background: var(--secondary-color);
   border-radius: 10px;
   padding: 15px;
   text-align: center;
@@ -265,15 +265,11 @@ header {
 
 .carbon-calculator button {
   background-color: var(--primary-color);
-  color: white;
+  color: var(--secondary-color);
   padding: 10px 20px;
   border: none;
   border-radius: 5px;
   cursor: pointer;
-}
-
-.carbon-calculator button:hover {
-  background-color: var(--hover-color);
 }
 
 .carbon-calculator p {
@@ -337,7 +333,7 @@ header {
   top: 50%;
   transform: translateY(-50%);
   background-color: rgba(0, 0, 0, 0.5);
-  color: white;
+  color: var(--secondary-color);
   border: none;
   padding: 10px;
   cursor: pointer;
@@ -372,17 +368,17 @@ header {
 
 .blog .btn {
   background-color: var(--primary-color);
-  color: white;
+  color: var(--secondary-color);
   padding: 0 8px;
 }
 
 .btn:hover {
-  background-color: tomato;
+  background-color: var(--hover-color);
 }
 
 .newsletter {
   background: var(--tertiary-color);
-  color: white;
+  color: var(--secondary-color);
   text-align: center;
   padding: 20px;
   margin: 20px;
@@ -405,15 +401,15 @@ header {
 }
 
 .newsletter button {
-  background: tomato;
-  color: white;
+  background: var(--primary-color);
+  color: var(--secondary-color);
   padding: 10px 15px;
   border: none;
   cursor: pointer;
 }
 
 .newsletter button:hover {
-  background: white;
+  background: var(--background-color);
   color: var(--primary-color);
 }
 
@@ -441,7 +437,7 @@ header {
   top: 50%;
   transform: translateY(-50%);
   background-color: rgba(0, 0, 0, 0.5);
-  color: white;
+  color: var(--background-color);
   border: none;
   padding: 10px;
   cursor: pointer;
@@ -519,7 +515,7 @@ span {
   font-weight: 700;
 }
 
-.social-media {
+.social-media, .follow-us {
   display: flex;
   justify-content: center;
   gap: 10px;
@@ -532,7 +528,13 @@ span {
   transition: all 0.3s ease-in-out;
 }
 
-.social-media a i:hover {
+.follow-us a {
+  color: var(--primary-color);
+  text-decoration: none;
+  font-weight: 700;
+}
+
+.social-media a i:hover, .follow-us a:hover {
   color: var(--hover-color);
 }
 
@@ -561,8 +563,7 @@ span {
   margin-bottom: 10px;
 }
 
-.contact-us input,
-.contact-us textarea {
+.contact-us input, .contact-us textarea {
   width: 100%;
   padding: 10px;
   border: 1px solid var(--tertiary-color);
@@ -572,7 +573,7 @@ span {
 
 .contact-us button {
   background-color: var(--primary-color);
-  color: white;
+  color: var(--secondary-color);
   padding: 10px 20px;
   border: none;
   border-radius: 5px;
@@ -580,8 +581,8 @@ span {
   margin-right: 10px;
 }
 
-.contact-us button:hover {
-  background-color: var(--hover-color);
+.contact-us button:hover, .carbon-calculator button:hover {
+  background-color: rgb(10, 137, 10);
 }
 
 .contact-info, .map, .business-hours, .social-media {
@@ -599,12 +600,16 @@ span {
   border-radius: 8px;
 }
 
+.business-hours {
+  margin: 20px;
+}
+
 .additional-resources {
   background-color: var(--secondary-color);
   padding: 20px;
   border-radius: 8px;
   margin-bottom: 30px;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  box-shadow: 0 2px 5px rgba(0,0,0,0.4);
 }
 
 .additional-resources h2 {
@@ -646,6 +651,13 @@ span {
   color: var(--primary-color);
   font-size: 1.5rem;
   margin-right: 10px;
+}
+
+
+.banner img {
+  width: 100%;
+  max-height: 300px;
+  object-fit: cover;
 }
 
 @media (max-width: 768px) { 
