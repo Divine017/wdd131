@@ -536,6 +536,53 @@ span {
   color: var(--hover-color);
 }
 
+.contact-us {
+  max-width: 600px;
+  margin: 20px auto;
+  background-color: var(--secondary-color);
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  padding: 20px;
+}
+
+.contact-us h2 {
+  font-family: "Josefin Sans", sans-serif;
+  color: var(--primary-color);
+  border-bottom: 2px solid var(--primary-color);
+  padding-bottom: 5px;
+  margin-bottom: 20px;
+  font-size: 1.5rem;
+}
+
+.contact-us label {
+  font-size: 1rem;
+  color: var(--tertiary-color);
+  display: block;
+  margin-bottom: 10px;
+}
+
+.contact-us input,
+.contact-us textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid var(--tertiary-color);
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.contact-us button {
+  background-color: var(--primary-color);
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.contact-us button:hover {
+  background-color: var(--hover-color);
+}
+
 @media (max-width: 768px) { 
 .hamburger {
   display: none;
