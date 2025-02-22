@@ -127,7 +127,6 @@ header {
 .article h3, .trip h3 {
   font-family: "Josefin Sans", sans-serif;
   color: var(--primary-color);
-  margin-bottom: 10px;
 }
 
 .article p, .travel-guides p, .trip p, .blog article p, .contact-info p, .business-hours p {
@@ -135,12 +134,13 @@ header {
   line-height: 1.4;
   font-family: "Port Lligat Sans", sans-serif;
   color: var(--tertiary-color);
+  padding: 10px;
 }
 
 .article a, .trip a, .blog article h3 a, .additional-resources a, .live-chat-link, .social-media a {
   text-decoration: none;
   font-weight: 700;
-  color: var(--primary-color);
+  color: var(--secondary-color);
 }
 
 .article a:hover, .article h3:hover, .trip h3:hover, .blog article h3 a:hover, .additional-resources a:hover, .live-chat-link:hover, .social-media a:hover {
@@ -164,13 +164,13 @@ header {
 .btn, .blog .btn, .booking-form button, .contact-us button, .carbon-calculator button {
   background-color: var(--primary-color);
   color: var(--secondary-color);
-  padding: 8px 15px;
+  padding: 2px 15px;
   text-decoration: none;
   border-radius: 5px;
   cursor: pointer;
 }
 
-.btn:hover, .blog .btn:hover, .booking-form button:hover, .contact-us button:hover, .carbon-calculator button:hover {
+.btn:hover, .blog .btn:hover, .booking-form button:hover {
   background-color: var(--hover-color);
 }
 
@@ -325,7 +325,7 @@ button {
   cursor: pointer;
 }
 
-button:hover {
+button:hover, .contact-us button:hover, .carbon-calculator button:hover {
   background-color: var(--primary-color);
   text-decoration: underline;
   border-radius: 10px;
