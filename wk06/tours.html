@@ -37,48 +37,107 @@
     </nav>
   </header>
 
-  <!-- Tours Section -->
+  <section class="hero">
+    <h1>Explore the World with Us</h1>
+    <p>Discover exciting destinations and unforgettable experiences.</p>
+    <input type="text" placeholder="Search for a tour..." id="searchBox">
+    <button onclick="searchTours()">Search</button>
+  </section>
+
+<section class="featured-tours">
+    <h2>Popular Tours</h2>
+    <div class="tour-grid">
+        <div class="tour-card">
+            <img src="images/tour1.jpg" alt="Tour Image">
+            <h3>African Safari Adventure</h3>
+            <p>Experience the beauty of African wildlife.</p>
+            <p class="price">$1,200 - 5 Days</p>
+            <button onclick="bookTour('African Safari Adventure')">Book Now</button>
+        </div>
+        <div class="tour-card">
+            <img src="images/tour2.jpg" alt="Tour Image">
+            <h3>European Heritage Tour</h3>
+            <p>Visit historical sites across Europe.</p>
+            <p class="price">$1,800 - 7 Days</p>
+            <button onclick="bookTour('European Heritage Tour')">Book Now</button>
+        </div>
+    </div>
+  </section>
+  
+  <section class="categories">
+    <h2>Tour Categories</h2>
+    <ul>
+      <li><a href="#">Adventure Tours</a></li>
+      <li><a href="#">Cultural Tours</a></li>
+      <li><a href="#">Luxury Tours</a></li>
+      <li><a href="#">Budget-Friendly</a></li>
+      <li><a href="#">Eco-Friendly</a></li>
+    </ul>
+  </section>
+  <section class="testimonials">
+    <h2>What Our Travelers Say</h2>
+    <blockquote>"The best travel experience ever! Highly recommended." - Sarah M.</blockquote>
+    <blockquote>"Eco-Travel Guides made my dream trip a reality!" - John D.</blockquote>
+  </section>
+  
+  <section class="faq">
+    <h2>Frequently Asked Questions</h2>
+    <details>
+      <summary>What is included in the tour package?</summary>
+      <p>Each package includes accommodation, meals, and guided tours.</p>
+    </details>
+    <details>
+      <summary>What is the cancellation policy?</summary>
+      <p>Free cancellation up to 7 days before departure.</p>
+    </details>
+  </section>
   <section class="tours">
-    <div class="container">
+    <div class="tour-container">
       <h2>Our Eco-Friendly Tours</h2>
-      <div class="tour-grid">
-        <div class="tour">
-          <img src="images/tour1.jpg" alt="Tour 1">
-          <h3>Rainforest Expedition</h3>
-          <p>Explore the lush rainforests with our guided tours, focusing on sustainable practices and wildlife conservation.</p>
-          <a href="booking.html" class="btn">Book Now</a>
+        <div class="tour-grid">
+          <div class="tour">
+            <img src="images/tour1.jpg" alt="Tour 1">
+            <h3>Rainforest Expedition</h3>
+            <p>Explore the lush rainforests with our guided tours,
+              focusing on sustainable practices and wildlife conservation.</p>
+            <a href="booking.html" class="btn">Book Now</a>
+          </div>
+          <div class="tour">
+            <img src="images/tour2.jpg" alt="Tour 2">
+            <h3>Mountain Adventure</h3>
+            <p>Join our eco-friendly mountain adventures,
+              promoting responsible trekking and local community support.</p>
+            <a href="booking.html" class="btn">Book Now</a>
+          </div>
+          <div class="tour">
+            <img src="images/tour3.jpg" alt="Tour 3">
+            <h3>Coastal Cleanup</h3>
+            <p>Participate in our coastal cleanup tours,
+              combining beach activities with environmental conservation efforts.</p>
+            <a href="booking.html" class="btn">Book Now</a>
+          </div>
+          <div class="tour">
+            <img src="images/tour4.jpg" alt="Tour 4">
+            <h3>Desert Safari</h3>
+            <p>Experience the beauty of the desert with our eco-friendly
+              safari tours, focusing on sustainable travel and wildlife protection.</p>
+            <a href="booking.html" class="btn">Book Now</a>
+          </div>
+          <div class="tour">
+            <img src="images/tour5.jpg" alt="Tour 5">
+            <h3>Urban Green Spaces</h3>
+            <p>Discover the hidden green spaces in urban areas with our
+              guided tours, promoting urban sustainability and green living.</p>
+            <a href="booking.html" class="btn">Book Now</a>
+          </div>
+          <div class="tour">
+            <img src="images/tour6.jpg" alt="Tour 6">
+            <h3>Wildlife Safari</h3>
+            <p>Join our wildlife safaris to explore natural habitats and
+              learn about conservation efforts to protect endangered species.</p>
+            <a href="booking.html" class="btn">Book Now</a>
+          </div>
         </div>
-        <div class="tour">
-          <img src="images/tour2.jpg" alt="Tour 2">
-          <h3>Mountain Adventure</h3>
-          <p>Join our eco-friendly mountain adventures, promoting responsible trekking and local community support.</p>
-          <a href="booking.html" class="btn">Book Now</a>
-        </div>
-        <div class="tour">
-          <img src="images/tour3.jpg" alt="Tour 3">
-          <h3>Coastal Cleanup</h3>
-          <p>Participate in our coastal cleanup tours, combining beach activities with environmental conservation efforts.</p>
-          <a href="booking.html" class="btn">Book Now</a>
-        </div>
-        <div class="tour">
-          <img src="images/tour4.jpg" alt="Tour 4">
-          <h3>Desert Safari</h3>
-          <p>Experience the beauty of the desert with our eco-friendly safari tours, focusing on sustainable travel and wildlife protection.</p>
-          <a href="booking.html" class="btn">Book Now</a>
-        </div>
-        <div class="tour">
-          <img src="images/tour5.jpg" alt="Tour 5">
-          <h3>Urban Green Spaces</h3>
-          <p>Discover the hidden green spaces in urban areas with our guided tours, promoting urban sustainability and green living.</p>
-          <a href="booking.html" class="btn">Book Now</a>
-        </div>
-        <div class="tour">
-          <img src="images/tour6.jpg" alt="Tour 6">
-          <h3>Wildlife Safari</h3>
-          <p>Join our wildlife safaris to explore natural habitats and learn about conservation efforts to protect endangered species.</p>
-          <a href="booking.html" class="btn">Book Now</a>
-        </div>
-      </div>
     </div>
   </section>
 
