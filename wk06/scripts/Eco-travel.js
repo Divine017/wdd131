@@ -70,5 +70,7 @@ function searchTours() {
 }
 
 function bookTour(tourName) {
-  alert("You have selected the " + tourName + " tour. Proceed to booking?");
+  if (confirm("You have selected the " + tourName + " tour. Proceed to booking?")) {
+    window.location.href = 'booking.html?tour=' + encodeURIComponent(tourName);
+  }
 }

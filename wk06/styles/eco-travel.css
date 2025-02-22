@@ -716,9 +716,9 @@ span {
 .hero {
   text-align: center;
   padding: 40px;
-  background-image: url('../images/hero.jpg');
+  background-image: url('../images/aguila-de-osa-river-drake.jpg');
   background-size: cover;
-  color: white;
+  color: var(--secondary-color);
 }
 
 .tour-grid {
