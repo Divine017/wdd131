@@ -156,7 +156,7 @@ header {
   box-shadow: 0 5px 5px rgba(0,0,0,0.3);
 }
 
-.trip img {
+.trip img, .carousel img, .tour-grid img {
   width: 100%;
   border-radius: 8px;
 }
@@ -186,11 +186,6 @@ header {
 .carousel {
   display: flex;
   transition: transform 0.5s ease-in-out;
-}
-
-.carousel img {
-  width: 100%;
-  border-radius: 8px;
 }
 
 .carousel-btn {
@@ -329,6 +324,13 @@ button:hover, .contact-us button:hover, .carbon-calculator button:hover {
   background-color: var(--primary-color);
   text-decoration: underline;
   border-radius: 10px;
+}
+
+.tour {
+  background-color: var(--secondary-color);
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
 
 @media (max-width: 768px) { 
