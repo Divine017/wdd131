@@ -64,3 +64,11 @@ document.querySelector('.live-chat-link').addEventListener('click', function(e) 
   alert("Live Chat is currently unavailable. Please call our hotline at 1-800-555-1234 for immediate assistance.");
 });
 
+function searchTours() {
+  let query = document.getElementById('searchBox').value.toLowerCase();
+  alert("Searching for: " + query);
+}
+
+function bookTour(tourName) {
+  alert("You have selected the " + tourName + " tour. Proceed to booking?");
+}

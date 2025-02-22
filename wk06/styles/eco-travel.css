@@ -713,6 +713,55 @@ span {
   background-color: var(--hover-color);
 }
 
+.hero {
+  text-align: center;
+  padding: 40px;
+  background-image: url('../images/hero.jpg');
+  background-size: cover;
+  color: white;
+}
+
+.tour-grid {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 20px;
+}
+
+.tour-card {
+  background: white;
+  padding: 15px;
+  border-radius: 10px;
+  width: 300px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.tour-card img {
+  width: 100%;
+  border-radius: 5px;
+}
+
+button {
+  background-color: #2E8B57;
+  color: white;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #256c48;
+}
+
+footer {
+  background: #2E8B57;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  margin-top: 20px;
+}
+
 @media (max-width: 768px) { 
   .hamburger {
     display: none;
