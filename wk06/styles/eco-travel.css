@@ -1,9 +1,9 @@
 :root {
-    --primary-color: #2E8B57;
-    --secondary-color: #FFFFFF;
-    --tertiary-color: #333333;
-    --background-color: #F5F5DC;
-    --hover-color: tomato;
+  --primary-color: #2E8B57;
+  --secondary-color: #FFFFFF;
+  --tertiary-color: #333333;
+  --background-color: #F5F5DC;
+  --hover-color: tomato;
 }
 
 * {
@@ -59,7 +59,10 @@ header {
   border-radius: 8px;
   box-shadow: 0 2px 5px rgba(0,0,0,0.1);
   text-align: center;
-  padding: 20px;
+  padding: 40px;
+  background-image: url('../images/eco-travel-hero.webp');
+  background-size: cover;
+  color: var(--secondary-color);
 }
 
 .hero img {
@@ -80,16 +83,17 @@ header {
   line-height: 1.6;
 }
 
-.featured-articles {
+.featured-articles, .featured-trips, .carbon-calculator, .testimonials, .blog, .contact-us, .booking-form {
   max-width: 1200px;
   margin: 20px auto;
   background-color: var(--secondary-color);
   border-radius: 8px;
   box-shadow: 0 2px 5px rgba(0,0,0,0.1);
   padding: 20px;
+  text-align: center;
 }
 
-.featured-articles h2 {
+.featured-articles h2, .featured-trips h2, .carbon-calculator h2, .testimonials h2, .blog h2, .contact-us h2, .contact-us h3, .booking-form h2 {
   font-family: "Josefin Sans", sans-serif;
   color: var(--primary-color);
   border-bottom: 2px solid var(--primary-color);
@@ -98,13 +102,13 @@ header {
   font-size: 1.5rem;
 }
 
-.article-grid {
+.article-grid, .trip-grid, .tour-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   grid-gap: 20px;
 }
 
-.article {
+.article, .trip, .tour-card {
   background-color: var(--secondary-color);
   border: 1px solid var(--background-color);
   border-radius: 6px;
@@ -113,96 +117,33 @@ header {
   box-shadow: 0 1px 3px rgba(0,0,0,0.1);
 }
 
-.article img {
+.article img, .trip img, .tour-card img {
   width: 100%;
   height: auto;
   border-radius: 6px;
   margin-bottom: 10px;
 }
 
-.article h3 {
+.article h3, .trip h3 {
   font-family: "Josefin Sans", sans-serif;
   color: var(--primary-color);
   margin-bottom: 10px;
 }
 
-.article p, .travel-guides p {
+.article p, .travel-guides p, .trip p, .blog article p, .contact-info p, .business-hours p {
   font-size: 1rem;
   line-height: 1.4;
   font-family: "Port Lligat Sans", sans-serif;
   color: var(--tertiary-color);
 }
 
-.article a {
+.article a, .trip a, .blog article h3 a, .additional-resources a, .live-chat-link, .social-media a {
   text-decoration: none;
   font-weight: 700;
-}
-
-.article a:hover, .article h3:hover {
-  color: var(--hover-color);
-  text-decoration: underline;
-}
-
-.featured-trips {
-  max-width: 1200px;
-  margin: 20px auto;
-  background-color: var(--secondary-color);
-  border-radius: 8px;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-  padding: 20px;
-  text-align: center;
-}
-
-.featured-trips h2 {
-  font-family: "Josefin Sans", sans-serif;
   color: var(--primary-color);
-  border-bottom: 2px solid var(--primary-color);
-  padding-bottom: 5px;
-  margin-bottom: 20px;
-  font-size: 1.5rem;
 }
 
-.trip-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  grid-gap: 10px;
-}
-
-.trip {
-  background-color: var(--secondary-color);
-  border: 1px solid var(--background-color);
-  border-radius: 6px;
-  text-align: center;
-  padding: 15px;
-  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
-}
-
-.trip img {
-  width: 100%;
-  height: auto;
-  border-radius: 6px;
-  margin-bottom: 10px;
-}
-
-.trip h3 {
-  font-family: "Josefin Sans", sans-serif;
-  margin-bottom: 10px;
-}
-
-.trip p {
-  font-size: 1rem;
-  line-height: 1.4;
-  font-family: "Port Lligat Sans", sans-serif;
-  color: var (--tertiary-color);
-  padding-bottom: 20px;
-}
-
-.trip a {
-  text-decoration: none;
-  font-weight: 700;
-}
-
-.trip h3:hover {
+.article a:hover, .article h3:hover, .trip h3:hover, .blog article h3 a:hover, .additional-resources a:hover, .live-chat-link:hover, .social-media a:hover {
   color: var(--hover-color);
   text-decoration: underline;
 }
@@ -220,198 +161,17 @@ header {
   border-radius: 8px;
 }
 
-.btn {
+.btn, .blog .btn, .booking-form button, .contact-us button, .carbon-calculator button {
   background-color: var(--primary-color);
-  color: white;
+  color: var(--secondary-color);
   padding: 8px 15px;
   text-decoration: none;
   border-radius: 5px;
-}
-
-.carbon-calculator {
-  max-width: 1200px;
-  margin: 20px auto;
-  background-color: var(--secondary-color);
-  border-radius: 8px;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-  padding: 20px;
-  text-align: center;
-}
-
-.carbon-calculator h2 {
-  font-family: "Josefin Sans", sans-serif;
-  color: var(--primary-color);
-  border-bottom: 2px solid var(--primary-color);
-  padding-bottom: 5px;
-  margin-bottom: 20px;
-  font-size: 1.5rem;
-}
-
-.carbon-calculator label {
-  font-size: 1rem;
-  color: var(--tertiary-color);
-  display: block;
-  margin-bottom: 10px;
-}
-
-.carbon-calculator input {
-  padding: 10px;
-  border: 1px solid var(--tertiary-color);
-  border-radius: 5px;
-  margin-bottom: 10px;
-  width: 100%;
-  max-width: 300px;
-}
-
-.carbon-calculator button {
-  background-color: var(--primary-color);
-  color: var(--secondary-color);
-  padding: 10px 20px;
-  border: none;
-  border-radius: 5px;
   cursor: pointer;
 }
 
-.carbon-calculator p {
-  font-size: 1.2rem;
-  color: var(--tertiary-color);
-  margin-top: 20px;
-}
-
-.testimonials {
-  max-width: 1200px;
-  margin: 20px auto;
-  background-color: var(--secondary-color);
-  border-radius: 8px;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-  padding: 20px;
-  text-align: center;
-  position: relative;
-}
-
-.testimonials h2 {
-  font-family: "Josefin Sans", sans-serif;
-  color: var(--primary-color);
-  border-bottom: 2px solid var(--primary-color);
-  padding-bottom: 5px;
-  margin-bottom: 20px;
-  font-size: 1.5rem;
-}
-
-.carousel-inner {
-  display: flex;
-  transition: transform 0.5s ease-in-out;
-}
-
-.testimonial {
-  min-width: 100%;
-  box-sizing: border-box;
-  padding: 20px;
-}
-
-.testimonial p {
-  font-size: 1.2rem;
-  line-height: 1.6;
-  color: var(--tertiary-color);
-  text-align: center;
-  white-space: normal;
-  overflow: hidden;
-  word-wrap: break-word;
-  margin: 0 auto;
-  max-width: 90%;
-}
-
-.testimonial strong {
-  display: block;
-  margin-top: 10px;
-  font-size: 1rem;
-  color: var(--primary-color);
-}
-
-.carousel-btn {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  background-color: rgba(0, 0, 0, 0.5);
-  color: var(--secondary-color);
-  border: none;
-  padding: 10px;
-  cursor: pointer;
-  font-size: 18px;
-}
-
-.carousel-btn:hover {
-  background-color: rgba(0, 0, 0, 0.8);
-}
-
-.prev {
-  left: 10px;
-}
-
-.next {
-  right: 10px;
-}
-
-.testimonial-btn-left {
-  position: absolute;
-  top: 50%;
-  left: 10px;
-  transform: translateY(-50%);
-}
-
-.testimonial-btn-right {
-  position: absolute;
-  top: 50%;
-  right: 10px;
-  transform: translateY(-50%);
-}
-
-.blog .btn {
-  background-color: var(--primary-color);
-  color: var(--secondary-color);
-  padding: 0 8px;
-}
-
-.btn:hover {
+.btn:hover, .blog .btn:hover, .booking-form button:hover, .contact-us button:hover, .carbon-calculator button:hover {
   background-color: var(--hover-color);
-}
-
-.newsletter {
-  background: var(--tertiary-color);
-  color: var(--secondary-color);
-  text-align: center;
-  padding: 20px;
-  margin: 20px;
-}
-
-.newsletter h2 {
-  font-family: "Teko", sans-serif;
-}
-
-.newsletter p {
-  font-size: 1rem;
-  margin-bottom: 10px;
-  font-family: "Port Lligat Sans", sans-serif;
-}
-
-.newsletter input {
-  padding: 10px;
-  border: none;
-  border-radius: 5px;
-}
-
-.newsletter button {
-  background: var(--primary-color);
-  color: var(--secondary-color);
-  padding: 10px 15px;
-  border: none;
-  cursor: pointer;
-}
-
-.newsletter button:hover {
-  background: var(--background-color);
-  opacity: 0.8;
-  color: var(--primary-color);
 }
 
 .carousel-container {
@@ -457,51 +217,6 @@ header {
   right: 10px;
 }
 
-.blog {
-  max-width: 1200px;
-  margin: 20px auto;
-  background-color: var(--secondary-color);
-  border-radius: 8px;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-  padding: 20px;
-}
-
-.blog h2 {
-  font-family: "Josefin Sans", sans-serif;
-  color: var(--primary-color);
-  border-bottom: 2px solid var(--primary-color);
-  padding-bottom: 5px;
-  margin-bottom: 20px;
-  font-size: 1.5rem;
-}
-
-.blog article {
-  margin-bottom: 20px;
-}
-
-.blog article h3 {
-  font-family: "Josefin Sans", sans-serif;
-  color: var(--primary-color);
-  margin-bottom: 10px;
-}
-
-.blog article h3 a {
-  text-decoration: none;
-  color: var(--primary-color);
-}
-
-.blog article h3 a:hover {
-  color: var(--hover-color);
-  text-decoration: underline;
-}
-
-.blog article p {
-  font-size: 1rem;
-  line-height: 1.4;
-  font-family: "Port Lligat Sans", sans-serif;
-  color: var(--tertiary-color);
-}
-
 footer {
   background-color: var(--primary-color);
   color: var(--secondary-color);
@@ -539,32 +254,14 @@ span {
   color: var(--hover-color);
 }
 
-.contact-us {
-  max-width: 800px;
-  margin: 20px auto;
-  background-color: var(--secondary-color);
-  border-radius: 8px;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-  padding: 20px;
-}
-
-.contact-us h2, .contact-us h3 {
-  font-family: "Josefin Sans", sans-serif;
-  color: var(--primary-color);
-  border-bottom: 2px solid var(--primary-color);
-  padding-bottom: 5px;
-  margin-bottom: 20px;
-  font-size: 1.5rem;
-}
-
-.contact-us label {
+.contact-us label, .carbon-calculator label, .booking-form label {
   font-size: 1rem;
   color: var(--tertiary-color);
   display: block;
   margin-bottom: 10px;
 }
 
-.contact-us input, .contact-us textarea {
+.contact-us input, .contact-us textarea, .carbon-calculator input, .booking-form input, .booking-form select, .booking-form textarea {
   width: 100%;
   padding: 10px;
   border: 1px solid var(--tertiary-color);
@@ -572,27 +269,8 @@ span {
   margin-bottom: 10px;
 }
 
-.contact-us button {
-  background-color: var(--primary-color);
-  color: var(--secondary-color);
-  padding: 10px 20px;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  margin-right: 10px;
-}
-
-.contact-us button:hover, .carbon-calculator button:hover {
-  background-color: rgb(10, 137, 10, 0.9);
-}
-
 .contact-info, .map, .business-hours, .social-media {
   margin-top: 20px;
-}
-
-.contact-info p, .business-hours p {
-  font-size: 1rem;
-  color: var(--tertiary-color);
 }
 
 .map iframe {
@@ -613,31 +291,16 @@ span {
   box-shadow: 0 2px 5px rgba(0,0,0,0.4);
 }
 
-.additional-resources h2 {
-  color: var(--primary-color);
-  margin-bottom: 15px;
-}
-
-.travel-guides h2 {
+.additional-resources h2, .travel-guides h2 {
   color: var(--primary-color);
   margin-bottom: 15px;
   border-bottom: 2px solid var(--primary-color);
-} 
+}
 
 .additional-resources ul {
   list-style: disc;
   margin-left: 20px;
   margin-bottom: 15px;
-}
-
-.additional-resources a {
-  color: var(--primary-color);
-  text-decoration: none;
-}
-
-.additional-resources a:hover, .live-chat-link:hover, .social-media a:hover {
-  text-decoration: underline;
-  color: var(--hover-color);
 }
 
 .live-chat {
@@ -648,98 +311,10 @@ span {
   text-align: center;
 }
 
-.live-chat-link {
-  color: var(--primary-color);
-  font-weight: bold;
-  text-decoration: none;
-}
-
-.social-media a {
-  color: var(--primary-color);
-  font-size: 1.5rem;
-  margin-right: 10px;
-}
-
-
 .banner img {
   width: 100%;
   max-height: 300px;
   object-fit: cover;
-}
-
-.booking-form {
-  max-width: 800px;
-  margin: 20px auto;
-  background-color: var(--secondary-color);
-  border-radius: 8px;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-  padding: 20px;
-}
-
-.booking-form h2 {
-  font-family: "Josefin Sans", sans-serif;
-  color: var(--primary-color);
-  border-bottom: 2px solid var(--primary-color);
-  padding-bottom: 5px;
-  margin-bottom: 20px;
-  font-size: 1.5rem;
-}
-
-.booking-form label {
-  font-size: 1rem;
-  color: var(--tertiary-color);
-  display: block;
-  margin-bottom: 10px;
-}
-
-.booking-form input, .booking-form select, .booking-form textarea {
-  width: 100%;
-  padding: 10px;
-  border: 1px solid var(--tertiary-color);
-  border-radius: 5px;
-  margin-bottom: 10px;
-}
-
-.booking-form button {
-  background-color: var(--primary-color);
-  color: var(--secondary-color);
-  padding: 10px 20px;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-}
-
-.booking-form button:hover {
-  background-color: var(--hover-color);
-}
-
-.hero {
-  text-align: center;
-  padding: 40px;
-  background-image: url('../images/aguila-de-osa-river-drake.jpg');
-  background-size: cover;
-  color: var(--secondary-color);
-}
-
-.tour-grid {
-  display: flex;
-  gap: 20px;
-  justify-content: center;
-  flex-wrap: wrap;
-  padding: 20px;
-}
-
-.tour-card {
-  background: var(--secondary-color);
-  padding: 15px;
-  border-radius: 10px;
-  width: 300px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-}
-
-.tour-card img {
-  width: 100%;
-  border-radius: 5px;
 }
 
 button {
@@ -758,42 +333,42 @@ button:hover {
 
 @media (max-width: 768px) { 
   .hamburger {
-    display: none;
-    position: absolute; 
-    top: 20px; 
-    right: 20px;
-    cursor: pointer;
-    flex-direction: column;
-    gap: 5px;
+  display: none;
+  position: absolute; 
+  top: 20px; 
+  right: 20px;
+  cursor: pointer;
+  flex-direction: column;
+  gap: 5px;
   }
 
   .bar {
-    width: 30px;
-    height: 4px;
-    background-color: var(--secondary-color);
-    border-radius: 2px;
-    transition: all 0.3s ease;
+  width: 30px;
+  height: 4px;
+  background-color: var(--secondary-color);
+  border-radius: 2px;
+  transition: all 0.3s ease;
   }
   
   .hamburger.active .bar:nth-child(1) {
-    transform: rotate(50deg) translate(6px, 9px);
+  transform: rotate(50deg) translate(6px, 9px);
   }
   
   .hamburger.active .bar:nth-child(2) {
-    opacity: 0;
+  opacity: 0;
   }
 
   .hamburger.active .bar:nth-child(3) {
-    transform: rotate(-50deg) translate(5px, -9px);
+  transform: rotate(-50deg) translate(5px, -9px);
   }
 
   .hamburger {
-    display: flex;
-    transition: transform 0.3s ease-in-out;
+  display: flex;
+  transition: transform 0.3s ease-in-out;
   }
   
   #nav-menu {
-    display: none; 
+  display: none; 
   }
   
   #nav-menu.active {
@@ -804,15 +379,15 @@ button:hover {
   }
 
   #nav-menu.active ul {
-    flex-direction: column;
-    gap: 5px;
+  flex-direction: column;
+  gap: 5px;
   }
   
   #nav-menu ul li a {
-    display: block;
-    padding: 5px;
-    text-decoration: none;
-    color: var(--secondary-color);
-    transition: background 0.3s;
+  display: block;
+  padding: 5px;
+  text-decoration: none;
+  color: var(--secondary-color);
+  transition: background 0.3s;
   }
 }
