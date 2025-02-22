@@ -1,34 +1,14 @@
-// // Select the hamburger icon and the nav menu (the <ul>)
-// const hamburger = document.getElementById('hamburger');
-// const navList = document.querySelector('#nav-menu ul');
+document.addEventListener('DOMContentLoaded', () => {
+  const hamburger = document.getElementById('hamburger');
+  const navMenu = document.getElementById('nav-menu');
 
-// // Listen for a click on the hamburger icon
-// hamburger.addEventListener('click', () => {
-//   const isActive = hamburger.classList.toggle('active');
-//   navList.classList.toggle('active');
-//   document.getElementById('nav-menu').setAttribute('aria-expanded', isActive);
-// });
-
-// Select the hamburger icon and the full navigation menu
-const hamburger = document.getElementById('hamburger');
-const navMenu = document.getElementById('nav-menu');
-
-// Listen for a click on the hamburger icon
-hamburger.addEventListener('click', () => {
-  const isActive = navMenu.classList.toggle('active');
-  hamburger.classList.toggle('active');
-  navMenu.setAttribute('aria-expanded', isActive);
+  hamburger.addEventListener('click', () => {
+    hamburger.classList.toggle('active');
+    navMenu.classList.toggle('active');
+    const ariaExpanded = navMenu.classList.contains('active') ? 'true' : 'false';
+    navMenu.setAttribute('aria-expanded', ariaExpanded);
+  });
 });
-
-// Close menu when clicking outside of it
-document.addEventListener('click', (event) => {
-  if (!navMenu.contains(event.target) && !hamburger.contains(event.target)) {
-    navMenu.classList.remove('active');
-    hamburger.classList.remove('active');
-    navMenu.setAttribute('aria-expanded', false);
-  }
-});
-
 
 function calculateFootprint() {
   let distance = document.getElementById("distance").value;

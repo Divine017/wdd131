@@ -36,7 +36,42 @@
       </ul>
     </nav>
   </header>
+  
+  <main>
+    <section class="booking-form">
+      <h2>Book Your Eco-Travel Adventure</h2>
+      <form action="#" method="post">
+        <label for="name">Full Name</label>
+        <input type="text" id="name" name="name" required>
 
+        <label for="email">Email Address</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="phone">Phone Number</label>
+        <input type="tel" id="phone" name="phone" required>
+
+        <label for="destination">Destination</label>
+        <select id="destination" name="destination" required>
+          <option value="">Select a destination</option>
+          <option value="destination1">Destination 1</option>
+          <option value="destination2">Destination 2</option>
+          <option value="destination3">Destination 3</option>
+          <option value="destination4">Destination 4</option>
+          <option value="destination5">Destination 5</option>
+          <option value="destination6">Destination 6</option>
+        </select>
+
+        <label for="date">Travel Date</label>
+        <input type="date" id="date" name="date" required>
+
+        <label for="message">Additional Information</label>
+        <textarea id="message" name="message" rows="4"></textarea>
+
+        <button type="submit">Submit Booking</button>
+      </form>
+    </section>
+  </main>
+  
    <!-- Footer -->
    <footer>
     <p>&copy; 2025 Eco-Travel Guides</p>
